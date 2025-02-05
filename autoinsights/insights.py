@@ -53,7 +53,7 @@ class AutoInsights:
             plt.title("Count Plots of Categorical Features")
             plt.show()
 
-    def explore_dataset(self) 
+    def explore_dataset(self):
         self.explore_data()
     
     def generate_plots(self):
