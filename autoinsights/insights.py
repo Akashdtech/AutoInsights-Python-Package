@@ -35,7 +35,7 @@ class AutoInsights:
         plt.title("Boxplots of Numerical Features")
         plt.show()
 
-   def plot_correlation_heatmap(self):
+    def plot_correlation_heatmap(self):
         """Plot a heatmap of feature correlations."""
         numeric_cols = self.df.select_dtypes(include = ["number"]).columns
         plt.figure(figsize = (10, 6))
