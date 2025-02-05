@@ -31,7 +31,7 @@ Usage:
     insights = AutoInsights(df)
 
     # Explore dataset
-    insights.explore_data()
+    insights.explore_dataset()
 
     # Generate visualizations
     insights.generate_plots()
