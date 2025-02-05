@@ -15,7 +15,7 @@ Visualizations:
 
 Installation:
 
-    Install via pip: !pip install git+https://github.com/Akashdtech/AutoInsights-Python-Package.git
+    !pip install git+https://github.com/Akashdtech/AutoInsights-Python-Package.git
 
 Usage:
 
