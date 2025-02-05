@@ -19,7 +19,6 @@ Installation:
 
 Usage:
 
-    import pandas as pd
     from autoinsights import AutoInsights
 
     # Load dataset
