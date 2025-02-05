@@ -15,11 +15,14 @@ Visualizations:
 
 Installation:
 
-    Install via pip: pip install autoinsights
+    Install via pip: !pip install git+https://github.com/Akashdtech/AutoInsights-Python-Package.git
 
 Usage:
 
     from autoinsights import AutoInsights
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 
     # Load dataset
     df = pd.read_csv("your_dataset.csv")
