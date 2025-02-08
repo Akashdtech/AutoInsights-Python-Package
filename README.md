@@ -35,9 +35,7 @@ Installation:
 
     To install AutoInsights directly from GitHub, run: pip install git+https://github.com/Akashdtech/AutoInsights-Python-Package.git
 
-Usage:
-
-    1. Initial Dataset Exploration:
+Initial Dataset Exploration:
 
     from autoinsights import AutoInsights
     import pandas as pd
@@ -51,11 +49,11 @@ Usage:
     # Explore dataset (prints summary statistics, missing values, and sample records)
     insights.explore_dataset()
 
-    2. Generate All Visualizations at once:
+Generate All Visualizations at once for the entire dataset:
 
-    insights.generate_all_plots()  # Creates all available visualizations for the entire dataset at once
+    insights.generate_all_plots()
 
-    3. Generate Visualization for all the respective columns in the entire dataset:
+Generate Visualization for all the respective columns in the entire dataset:
 
     insights.plot_histograms()
     insights.plot_line_plots()
@@ -69,16 +67,16 @@ Usage:
     insights.plot_bar_charts()
     insights.plot_pie_charts()
 
-    4. Generate Visualizations for Specific Columns:
+Generate Visualizations for Specific Columns:
     
-    i. <For Numerical Columns>
+    # For Numerical Columns>
 
     insights.plot_histogram("column_name")
     insights.plot_line_plot("column_name")
     insights.plot_scatter_plot("column1", "column2")
     insights.plot_boxplot("column_name")
 
-    ii. <For Categorical Columns>
+    # For Categorical Columns>
 
     insights.plot_categorical_count("column_name")
     insights.plot_bar_chart("column_name")
