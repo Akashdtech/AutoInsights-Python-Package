@@ -35,7 +35,7 @@ class AutoInsights:
         plt.ylabel("Frequency")  
         plt.show()  
 
-def plot_line_plot(self, column_name1, column_name2):  
+    def plot_line_plot(self, column_name1, column_name2):  
         """Plot a line plot for two specific columns."""  
         plt.figure(figsize=(10, 6))  
         sns.lineplot(x=self.df[column_name1], y=self.df[column_name2], data=self.df)  
