@@ -71,14 +71,14 @@ Usage:
 
     4. Generate Visualizations for Specific Columns:
     
-    i. For Numerical Columns>
+    i. <For Numerical Columns>
 
     insights.plot_histogram("column_name")
     insights.plot_line_plot("column_name")
     insights.plot_scatter_plot("column1", "column2")
     insights.plot_boxplot("column_name")
 
-    ii. For Categorical Columns>
+    ii. <For Categorical Columns>
 
     insights.plot_categorical_count("column_name")
     insights.plot_bar_chart("column_name")
