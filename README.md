@@ -51,29 +51,38 @@ Usage:
     # Explore dataset (prints summary statistics, missing values, and sample records)
     insights.explore_dataset()
 
-    2. Generate All Visualizations at Once:
+    2. Generate All Visualizations at once:
 
-    insights.generate_all_plots()  # Creates all available visualizations for the dataset
+    insights.generate_all_plots()  # Creates all available visualizations for the entire dataset at once
 
-    3. Generate Specific Visualizations:
+    3. Generate Visualization for all the respective columns in the entire dataset:
+
+    insights.plot_histograms()
+    insights.plot_line_plots()
+    insights.plot_scatter_plots()
+    insights.plot_boxplots()
     
-    For Numerical Columns
+    insights.plot_correlation_heatmap()
+    insights.plot_pairplot()
+    
+    insights.plot_categorical_counts()
+    insights.plot_bar_charts()
+    insights.plot_pie_charts()
 
-    insights.plot_histogram("column_name")  # Generates a histogram for a given numerical column
-    insights.plot_line_plot("column_name")  # Plots a line graph for numerical data over index
-    insights.plot_scatter_plot("column1", "column2")  # Scatter plot between two numerical variables
-    insights.plot_boxplot("column_name")  # Boxplot to detect outliers in a numerical column
+    4. Generate Visualizations for Specific Columns:
+    
+    i. For Numerical Columns>
 
-    For Categorical Columns
+    insights.plot_histogram("column_name")
+    insights.plot_line_plot("column_name")
+    insights.plot_scatter_plot("column1", "column2")
+    insights.plot_boxplot("column_name")
 
-    insights.plot_categorical_count("column_name")  # Count plot for categorical variables
-    insights.plot_bar_chart("column_name")  # Bar chart for categorical feature distribution
-    insights.plot_pie_chart("column_name")  # Pie chart representation of category proportions
+    ii. For Categorical Columns>
 
-    For Advanced Analysis
-
-    insights.plot_correlation_heatmap()  # Heatmap to visualize correlation between numerical variables
-    insights.plot_pairplot()  # Pairwise scatter plots for numerical features
+    insights.plot_categorical_count("column_name")
+    insights.plot_bar_chart("column_name")
+    insights.plot_pie_chart("column_name")
 
 Why Use AutoInsights?
 
