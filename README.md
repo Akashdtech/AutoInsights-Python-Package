@@ -13,20 +13,21 @@ Dataset Exploration:
 Comprehensive Visualizations:
 
     AutoInsights includes a wide range of visualization functions to help users better understand data distributions and relationships.
-    Numerical Data Visualizations.
+    
+    i. Numerical Data Visualizations:
 
     Histograms: Displays the distribution of numerical columns.
     Boxplots: Identifies outliers and data spread.
     Line Plots: Tracks numerical feature trends over index values.
     Scatter Plots: Shows relationships between numerical variables.
 
-Categorical Data Visualizations:
+    ii. Categorical Data Visualizations:
 
     Count Plots: Displays the frequency of different categories.
     Bar Charts: Visualizes categorical distributions.
     Pie Charts: Represents categorical proportions.
 
-Advanced Visualizations:
+    iii. Advanced Visualizations:
 
     Correlation Heatmap: Displays the relationships between numerical features using a heatmap.
     Pairplot: Generates scatter plots between all numerical variables for pairwise comparison.
@@ -56,8 +57,6 @@ Generate All Visualizations at once for the entire dataset:
 Generate Visualization for all the respective columns in the entire dataset:
 
     insights.plot_histograms()
-    insights.plot_line_plots()
-    insights.plot_scatter_plots()
     insights.plot_boxplots()
     
     insights.plot_correlation_heatmap()
@@ -72,7 +71,7 @@ Generate Visualizations for Specific Columns:
     # For Numerical Columns>
 
     insights.plot_histogram("column_name")
-    insights.plot_line_plot("column_name")
+    insights.plot_line_plot("column1", "column2")
     insights.plot_scatter_plot("column1", "column2")
     insights.plot_boxplot("column_name")
 
