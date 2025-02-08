@@ -35,34 +35,14 @@ class AutoInsights:
         plt.ylabel("Frequency")  
         plt.show()  
 
-    def plot_line_plots(self):
-        """Plot line plots for numerical features against a suitable index."""
-        numeric_cols = self.df.select_dtypes(include=["number"]).columns
-        for col in numeric_cols:
-            plt.figure(figsize=(10, 6))
-            sns.lineplot(x=self.df.index, y=col, data=self.df)
-            plt.title(f"Line Plot: {col} over Index")
-            plt.show()
-
-    def plot_line_plot(self, column_name):
-        """Plot a line plot for a specific column against a suitable index."""
-        plt.figure(figsize=(10, 6))
-        sns.lineplot(x=self.df.index, y=column_name, data=self.df)
-        plt.title(f"Line Plot: {column_name} over Index")
+def plot_line_plot(self, column_name1, column_name2):  
+        """Plot a line plot for two specific columns."""  
+        plt.figure(figsize=(10, 6))  
+        sns.lineplot(x=self.df[column_name1], y=self.df[column_name2], data=self.df)  
+        plt.title(f"Line Plot: {column_name1} vs {column_name2}")  
+        plt.xlabel(column_name1)  
+        plt.ylabel(column_name2)  
         plt.show()
-
-    def plot_scatter_plots(self):
-        """Plot scatter plots for all pairs of numerical features."""
-        numeric_cols = self.df.select_dtypes(include=["number"]).columns
-        for col1 in numeric_cols:
-            for col2 in numeric_cols:
-                if col1 != col2:
-                    plt.figure(figsize=(8, 6))
-                    sns.scatterplot(x=col1, y=col2, data=self.df)
-                    plt.title(f"Scatter Plot: {col1} vs {col2}")
-                    plt.xlabel(col1)
-                    plt.ylabel(col2)
-                    plt.show()
 
     def plot_scatter_plot(self, column_name1, column_name2):
         """Plot a scatter plot for two specific numerical columns."""
@@ -162,8 +142,6 @@ class AutoInsights:
     def generate_all_plots(self):
         """Perform dataset exploration and generate all visualizations."""
         self.plot_histograms()
-        self.plot_line_plots()
-        self.plot_scatter_plots()
         self.plot_boxplots()
         self.plot_correlation_heatmap()
         self.plot_pairplot()
