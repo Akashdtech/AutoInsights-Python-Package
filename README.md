@@ -18,7 +18,7 @@ Comprehensive Visualizations:
 
     Histograms: Displays the distribution of numerical columns.
     Boxplots: Identifies outliers and data spread.
-    Line Plots: Tracks numerical feature trends over index values.
+    Line Plots: Exhibits interdependancies between numerical features.
     Scatter Plots: Shows relationships between numerical variables.
 
     ii. Categorical Data Visualizations:
